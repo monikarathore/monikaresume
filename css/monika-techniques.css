@@ -1,0 +1,40 @@
+.monika-techniques{z-index: 1288787;display: none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background:rgba(222, 21, 27, 0.8);}
+.monika-techniques .techniq-category{margin:3%;}
+.monika-techniques .techniq-category li{display: inline-block;}
+.monika-techniques .techniq-category li a{display: inline-block;padding:12px;cursor: pointer; text-decoration: none;font: 60px 'Istok Web';color: #fff;text-transform: uppercase;}
+.monika-techniques .techniq-category li a i{color:#fff;display: block;text-align: center;line-height: 20px;}
+.monika-techniques .techniq-category li a span{font-size: 30px;}
+.monika-link-techniques{background: #fff;width: 114px;display: block;height: 55px;position: fixed;bottom: 0;font-size: 20px;text-align: center;border-radius: 5px 5px 0 0;left: 0;right: 0;margin: 0 auto;z-index: 12887875;}
+.monika-link-techniques i{font-size: 26px;top: 5px; position: relative;}
+.monika-link-techniques-hide{background: #fff;width: 68px;display: block;height: 55px;position: fixed;bottom: 0;font-size: 20px;text-align: center;border-radius: 5px 5px 0 0;left: 0;right: 0;margin: 0 auto;z-index: 12887875;}
+.monika-link-techniques-hide i{font-size: 26px;top: 5px; position: relative;}
+
+.scrollTopCLick{background: #fff;border: 1px solid #ddd;border-radius: 100%;bottom: 30px;box-shadow: 0 2px 2px #848080;color: #777;position: fixed;right: 20px;text-align: center;z-index: 128878755;}
+.scrollTopCLick i{font-size: 30px;color: #777;padding:20px 22px;}
+/*tech page*/
+.tech-header{}
+.tech-header h3{font: 30px 'Russo One' !important;color: #444141;text-shadow: 0 2px 3px #848282;margin: 15px;}
+.tech-page-main{font-family: 'Open Sans';background: #fff;min-height: 400px;margin: 0 auto 20px;border-radius: 3px;box-shadow: 0 0 5px #1D7074;}
+.tech-page-main .jumbotron{padding:12px 20px;font-size: 18px; background: #F5F5F5 !important;}
+.tech-page-main .jumbotron .innerPage-jumbo{overflow-y: auto;padding: 12px 2px;font-size: 18px;/*background: url(../images/line.png) 0px 49px repeat;*/line-height: 32px;}
+.tech-page-main .jumbotron .innerPage-jumbo code{background: none;}
+.tech-page-main .jumbotron .innerPage-jumbo .line{border-bottom: 1px solid #3cc7cc;}
+.tech-page-main .jumbotron .innerPage-jumbo .line:first-child{border-top: 1px solid #3cc7cc;}
+.tech-page-main ul li, .tech-page-main ol li{font-size: 16px;}
+.tech-page-main h2 i{background: #3CC7CC;color: #fff;border-radius: 100%;padding: 7px;}
+.tech-page-main h3{}
+.tech-page-main p{font-size: 16px;}
+.fixed-tech{position: fixed; top: 0; margin: 0 auto;left: 0; right: 0;background: #73E39E;box-shadow: 0 2px 2px #706E6E;}
+.fixed-tech h3{color: #fff;}
+figure.post_image img{max-width: 100%;}
+.commnetArea{background: #fff;box-shadow: 0 0 5px #1D7074;border-radius: 3px; margin-bottom: 50px;}
+.commnetArea #disqus_thread iframe #footer{display: none !important;}
+/*/tech page*/
+
+@media screen and (max-width:690px){
+	.scrollTopCLick i {color: #777;font-size: 23px;padding: 10px 13px;}
+	.tech-page-main h2{font-size: 26px;}
+	.tech-page-main .jumbotron, .tech-page-main .jumbotron .innerPage-jumbo{padding: 12px 8px;font-size: 14px;}
+	.tech-page-main p{font-size: 14px;}
+	.tech-page-main h3{font-size: 18px;}
+}

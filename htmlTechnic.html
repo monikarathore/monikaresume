@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Monika singh rathore Web Designer Front-end developer monika@medsolis.com medsolis">
+    <meta name="Description" content="Monika singh rathore Web Designer Front-end developer monika@medsolis.com medsolis">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+    <title>Monika Thakur | HTML Techniques</title>
+    <link rel="icon" type="image/png" href="#">
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sarina' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/monika-techniques.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+
+  </head>
+<body>
+<header class="tech-header clearfix container" id="tech-header">
+    <h3>
+        MT tuts
+    </h3>
+</header>
+<section class="tech-page-main clearfix container">
+        <h2><i class="fa fa-code"></i>  28 HTML5 Features, Tips, and Techniques you Must Know..</h2>
+        <p>
+            This industry moves fast—really fast! If you're not careful, you'll be left in its dust. So, if you're feeling a bit overwhelmed with the coming changes/updates in HTML5, use this as a primer of the things you must know.
+        </p>
+        <p>Before browsing through these techniques, have a look at our HTML5 Templates, as a quality theme might be a good option for your next project.</p>
+
+        <h3><span>1.</span> New Doctype</h3>
+        <p>Still using that pesky, impossible-to-memorize XHTML doctype?</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;!</code><code class="html keyword">DOCTYPE</code> <code class="html plain">html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"</code></div>
+            </div>
+        </div>
+        <p>If so, why? Switch to the new HTML5 doctype. You'll live longer -- as Douglas Quaid might say.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+              <div class="line number1 index0 alt2"> <code class="html plain">&lt;!</code><code class="html keyword">DOCTYPE</code> <code class="html plain">html&gt;</code></div>
+            </div>
+        </div>
+        <p>
+            In fact, did you know that it truthfully isn't even really necessary for HTML5? However, it's used for current, and older browsers that require a specified doctype. Browsers that do not understand this doctype will simply render the contained markup in standards mode. So, without worry, feel free to throw caution to the wind, and embrace the new HTML5 doctype.
+        </p>
+        <h3><span>2.</span> The Figure Element</h3>
+        <p>Consider the following mark-up for an image:</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+             <div class="line number1 index0 alt2"> <code class="html plain">&lt;</code><code class="html keyword">img</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"path/to/image"</code> <code class="html color1">alt</code><code class="html plain">=</code><code class="html string">"About image"</code> <code class="html plain">/&gt;</code></div>
+            </div>
+        </div>
+        <p>There unfortunately isn't any easy or semantic way to associate the caption, wrapped in a paragraph tag, with the image element itself. HTML5 rectifies this, with the introduction of the <code>&lt;figure&gt;</code> element. When combined with the <code>&lt;figcaption&gt;</code> element, we can now semantically associate captions with their image counterparts. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">figure</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">img</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"path/to/image"</code> <code class="html color1">alt</code><code class="html plain">=</code><code class="html string">"About image"</code> <code class="html plain">/&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">figcaption</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">p</code><code class="html plain">&gt;This is an image of something interesting. &lt;/</code><code class="html keyword">p</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">figcaption</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">figure</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <h3><span>3.</span>  &lt;small&gt; Redefined </h3>
+        <p>Not long ago, I utilized the <code>&lt;small&gt;</code> element to create subheadings that are closely related to the logo. It's a useful presentational element; however, now, that would be an incorrect usage. The <code>small</code> element has been redefined, more appropriately, to refer to small print. Imagine a copyright statement in the footer of your site; according to the new HTML5 definition of this element; the <code>&lt;small&gt;</code> would  be the correct wrapper for this information. </p>
+        <blockquote>
+            <p>The <code>small</code> element now refers to "small print." </p>
+        </blockquote>
+        <h3><span>4.</span> No More <code>Types</code> for Scripts and Links  </h3>
+        <p>You possibly still add the <code>type</code> attribute to your <code>link</code> and <code>script</code> tags. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">link</code> <code class="html color1">rel</code><code class="html plain">=</code><code class="html string">"stylesheet"</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"path/to/stylesheet.css"</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"text/css"</code> <code class="html plain">/&gt;</code></div><div class="line number2 index1 alt1"><code class="html plain">&lt;</code><code class="html keyword">script</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"text/javascript"</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"path/to/script.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <h3><span>5.</span> To Quote or Not to Quote. </h3>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">p</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">myClass</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">someId</code><code class="html plain">&gt; Start the reactor.</code></div>
+            </div>
+        </div>
+        <p>Make up your own mind on this one. If you prefer a more structured document, by all means, stick with the quotes.</p>
+        <h3><span>6.</span> Make your Content Editable </h3>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/contenteditable.png"></figure>
+        <p>
+            The new browsers have a nifty new attribute that can be applied to elements, called contenteditable. As the name implies, this allows the user to edit any of the text contained within the element, including its children. There are a variety of uses for something like this, including an app as simple as a to-do list, which also takes advantage of local storage.
+        </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;!</code><code class="html keyword">DOCTYPE</code> <code class="html plain">html&gt;</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;</code><code class="html keyword">html</code> <code class="html color1">lang</code><code class="html plain">=</code><code class="html string">"en"</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html plain">&lt;</code><code class="html keyword">head</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">meta</code> <code class="html color1">charset</code><code class="html plain">=</code><code class="html string">"utf-8"</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">title</code><code class="html plain">&gt;untitled&lt;/</code><code class="html keyword">title</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code class="html keyword">head</code><code class="html plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="html plain">&lt;</code><code class="html keyword">body</code><code class="html plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">h2</code><code class="html plain">&gt; To-Do List &lt;/</code><code class="html keyword">h2</code><code class="html plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">ul</code> <code class="html color1">contenteditable</code><code class="html plain">=</code><code class="html string">"true"</code><code class="html plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">li</code><code class="html plain">&gt; Break mechanical cab driver. &lt;/</code><code class="html keyword">li</code><code class="html plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">li</code><code class="html plain">&gt; Drive to abandoned factory</code></div><div class="line number13 index12 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">li</code><code class="html plain">&gt; Watch video of self &lt;/</code><code class="html keyword">li</code><code class="html plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">ul</code><code class="html plain">&gt;</code></div><div class="line number15 index14 alt2"><code class="html plain">&lt;/</code><code class="html keyword">body</code><code class="html plain">&gt;</code></div><div class="line number16 index15 alt1"><code class="html plain">&lt;/</code><code class="html keyword">html</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p>Or, as we learned in the previous tip, we could write it as:</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">ul</code> <code class="html color1">contenteditable</code><code class="html plain">=</code><code class="html string">true</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <h3><span>7.</span> Email Inputs </h3>
+        <p>If we apply a <code>type</code> of "email" to form inputs, we can instruct the browser to <em>only</em> allow strings that conform to a valid email address structure. That's right; built-in form validation will soon be here! We can't 100% rely on this just yet, for obvious reasons. In older browsers that do not understand this "email" type, they'll simply fall back to a regular textbox. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;!</code><code class="html keyword">DOCTYPE</code> <code class="html plain">html&gt;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="html plain">&lt;</code><code class="html keyword">html</code> <code class="html color1">lang</code><code class="html plain">=</code><code class="html string">"en"</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html plain">&lt;</code><code class="html keyword">head</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">meta</code> <code class="html color1">charset</code><code class="html plain">=</code><code class="html string">"utf-8"</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">title</code><code class="html plain">&gt;untitled&lt;/</code><code class="html keyword">title</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code class="html keyword">head</code><code class="html plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="html plain">&lt;</code><code class="html keyword">body</code><code class="html plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">form</code> <code class="html color1">action</code><code class="html plain">=</code><code class="html string">""</code> <code class="html color1">method</code><code class="html plain">=</code><code class="html string">"get"</code><code class="html plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">label</code> <code class="html color1">for</code><code class="html plain">=</code><code class="html string">"email"</code><code class="html plain">&gt;Email:&lt;/</code><code class="html keyword">label</code><code class="html plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"email"</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"email"</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"email"</code> <code class="html plain">/&gt;</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">button</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"submit"</code><code class="html plain">&gt; Submit Form &lt;/</code><code class="html keyword">button</code><code class="html plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">form</code><code class="html plain">&gt;</code></div><div class="line number15 index14 alt2"><code class="html plain">&lt;/</code><code class="html keyword">body</code><code class="html plain">&gt;</code></div><div class="line number16 index15 alt1"><code class="html plain">&lt;/</code><code class="html keyword">html</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/email_validation.png"></figure>
+        <blockquote>
+        <p>At this time, we cannot depend on browser validation. A server/client side solution must still be implemented.  </p>
+        </blockquote>
+        <p>It should also be noted that all the current browsers are a bit wonky when it comes to what elements and attributes they do and don't support. For example, Opera seems to support email validation, just as long as the <code>name</code> attribute is specified. However, it does not support the <code>placeholder</code> attribute, which we'll learn about in the next tip. Bottom line, don't depend on this form of validation just yet...but you can still use it!</p>
+        <h3><span>8.</span> Placeholders</h3>
+        <p>
+Before, we had to utilize a bit of JavaScript to create placeholders for textboxes. Sure, you can initially set the <code>value</code> attribute how you see fit, but, as soon as the user deletes that text and clicks away, the input will be left blank again. The <code>placeholder</code> attribute remedies this.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"email"</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"email"</code> <code class="html color1">placeholder</code><code class="html plain">=</code><code class="html string">"doug@givethesepeopleair.com"</code> <code class="html plain">/&gt;</code></div>
+            </div>
+        </div>
+        <p>Again, support is shady at best across browsers, however, this will continue to improve with every new release. Besides, if the browser, like Firefox and Opera, don't currently support the <code>placeholder</code> attribute, no harm done. </p>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/validation.png"></figure>
+        <h3><span>9.</span> Local Storage</h3>
+        <p>Thanks to local storage (not officially HTML5, but grouped in for convenience's sake), we can make advanced browsers "remember" what we type, even after the browser is closed or is refreshed.</p>
+        <!-- <figure data-video-embed="true" data-original-url="https://www.youtube.com/watch?v=h0uZIljjElo" class="embedded-video">
+  <iframe src="//www.youtube.com/embed/h0uZIljjElo?rel=0" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+</figure> -->
+        <blockquote>
+        <p>"localStorage sets fields on the domain. Even when you close the browser, reopen it, and go back to the site, it remembers all fields in localStorage."</p>
+        </blockquote>
+        <p>While obviously not supported across all browsers, we can expect this method to work, most notably, in Internet Explorer 8, Safari 4, and Firefox 3.5. Note that, to compensate for older browsers that won't recognize local storage, you should first test to determine whether window.localStorage exists. </p>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/macwin.png"><figcaption>via&nbsp;<a href="http://www.findmebyip.com/litmus/">http://www.findmebyip.com/litmus/</a></figcaption></figure>
+        <h3><span>10.</span> The Semantic <code>Header</code> and <code>Footer</code></h3>
+        <p>Gone are the days of:</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"header"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">...</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"footer"</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">...</code></div><div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p>Divs, by nature, have no semantic structure -- even after an <code>id</code> is applied. Now, with HTML5, we have access to the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements. The mark-up above can now be replaced with:</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">header</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">...</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;/</code><code class="html keyword">header</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="html plain">&lt;</code><code class="html keyword">footer</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">...</code></div><div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code class="html keyword">footer</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <blockquote>
+        <p>It's fully appropriate to have multiple <code>header</code>s and <code>footer</code>s in your projects. </p>
+        </blockquote>
+        <p>Try not to confuse these elements with the "header" and "footer" of your website. They simply refer to their container. As such, it makes sense to place, for example, meta information at the bottom of a blog post within the <code>footer</code> element. The same holds true for the <code>header</code>. </p>
+        <h3><span>11.</span> More HTML5 Form Features</h3>
+        <p>Learn about more helpful HTML5 form features in this quick video tip.</p>
+        <!-- <figure data-video-embed="true" data-original-url="https://www.youtube.com/watch?v=spjOAFGxOP0" class="embedded-video">
+  <iframe src="//www.youtube.com/embed/spjOAFGxOP0?rel=0" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe></figure> -->
+        <h3><span>12.</span> Internet Explorer and HTML5</h3>
+        <p>
+Unfortunately, that dang Internet Explorer requires a bit of wrangling in order to understand the new HTML5 elements.</p>
+        <blockquote>
+        <p>All elements, by default, have a <code>display</code> of <code>inline</code>. </p>
+        </blockquote>
+        <p>In order to ensure that the new HTML5 elements render correctly as block level elements, it's necessary at this time to style them as such. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="css plain">header, footer, article, section, nav, menu { </code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;&nbsp;</code><code class="css keyword">display</code><code class="css plain">: </code><code class="css value">block</code><code class="css plain">;</code></div><div class="line number3 index2 alt2"><code class="css plain">}</code></div>
+            </div>
+        </div>
+        <p>Unfortunately, Internet Explorer will still ignore these stylings, because it has no clue what, as an example, the <code>header</code> element even is. Luckily, there is an easy fix: </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="javascript plain">document.createElement(</code><code class="javascript string">"article"</code><code class="javascript plain">);</code></div><div class="line number2 index1 alt1"><code class="javascript plain">document.createElement(</code><code class="javascript string">"footer"</code><code class="javascript plain">);</code></div><div class="line number3 index2 alt2"><code class="javascript plain">document.createElement(</code><code class="javascript string">"header"</code><code class="javascript plain">);</code></div><div class="line number4 index3 alt1"><code class="javascript plain">document.createElement(</code><code class="javascript string">"nav"</code><code class="javascript plain">);</code></div><div class="line number5 index4 alt2"><code class="javascript plain">document.createElement(</code><code class="javascript string">"menu"</code><code class="javascript plain">);</code></div>
+            </div>
+        </div>
+        <p>Strangely enough, this code seems to trigger Internet Explorer. To simply this process for each new application, Remy Sharp created a script, commonly referred to as the HTML5 shiv. This script also fixes some printing issues as well.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html comments">&lt;!--[if IE]&gt;</code></div><div class="line number2 index1 alt1"><code class="html comments">&lt;script src="<a href="http://html5shim.googlecode.com/svn/trunk/html5.js">http://html5shim.googlecode.com/svn/trunk/html5.js</a>"&gt;&lt;/script&gt;</code></div><div class="line number3 index2 alt2"><code class="html comments">&lt;![endif]--&gt;</code></div>
+            </div>
+        </div>
+        <h3><span>13.</span>  hgroup*</h3>
+        <p>*Since first publication of this article, the hgroup element has become entirely obsolete and must no longer be used.</p>
+        <h3><span>14.</span>  Required Attribute</h3>
+        <p>Forms allow for a new <code>required</code> attribute, which specifies, naturally, whether a particular input is required. Dependent upon your coding preference, you can declare this attribute in one of two ways: </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"text"</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"someInput"</code> <code class="html plain">required&gt;</code></div>
+            </div>
+        </div>
+
+        <p>Or, with a more structured approach.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"text"</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"someInput"</code> <code class="html color1">required</code><code class="html plain">=</code><code class="html string">"required"</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p>Either method will do. With this code, and within browsers that support this attribute, a form cannot be submitted if that "someInput" input is blank. Here's a quick example; we'll also add the placeholder attribute as well, as there's no reason not to.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">form</code> <code class="html color1">method</code><code class="html plain">=</code><code class="html string">"post"</code> <code class="html color1">action</code><code class="html plain">=</code><code class="html string">""</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">label</code> <code class="html color1">for</code><code class="html plain">=</code><code class="html string">"someInput"</code><code class="html plain">&gt; Your Name: &lt;/</code><code class="html keyword">label</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"text"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"someInput"</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"someInput"</code> <code class="html color1">placeholder</code><code class="html plain">=</code><code class="html string">"Douglas Quaid"</code> <code class="html plain">required&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">button</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"submit"</code><code class="html plain">&gt;Go&lt;/</code><code class="html keyword">button</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html plain">&lt;/</code><code class="html keyword">form</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/placeholder_required.png"></figure>
+        <p>If the input is left blank, and the form is submitted, the textbox will be highlighted. </p>
+        <h3><span>15.</span>  Autofocus Attribute</h3>
+        <p>
+Again, HTML5 removes the need for JavaScript solutions. If a particular input should be "selected," or focused, by default, we can now utilize the <code>autofocus</code> attribute.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"text"</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"someInput"</code> <code class="html color1">placeholder</code><code class="html plain">=</code><code class="html string">"Douglas Quaid"</code> <code class="html plain">required autofocus&gt;</code>
+                </div>
+            </div>
+        </div>
+<p>Interestingly enough, while I personally tend to prefer a more XHTML approach (using quotation marks, etc.), writing <code>"autofocus=autofocus"</code> feels odd. As such, we'll stick with the single keyword approach. </p>
+    <h3><span>16.</span>  Audio Support</h3>
+    <p>No longer do we have to rely upon third party plugins in order to render audio. HTML5 now offers the <code>&lt;audio&gt;</code> element. Well, at least, ultimately, we won't have to worry about these plugins. For the time being, only the most recent of browsers offer support for HTML5 audio. At this time, it's still a good practice to offer some form of backward compatibility.  </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+               <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">audio</code> <code class="html color1">autoplay</code><code class="html plain">=</code><code class="html string">"autoplay"</code> <code class="html color1">controls</code><code class="html plain">=</code><code class="html string">"controls"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">source</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"file.ogg"</code> <code class="html plain">/&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">source</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"file.mp3"</code> <code class="html plain">/&gt; </code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code><code class="html plain">&gt;Download this file.&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html plain">&lt;/</code><code class="html keyword">audio</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p>Mozilla and Webkit don’t fully get along just yet, when it comes to the audio format. Firefox will want to see an .ogg file, while Webkit browsers will work just fine with the common .mp3 extension. This means that, at least for now, you should create two versions of the audio.</p>
+        <p>When Safari loads the page, it won’t recognize that .ogg format, and will skip it and move on to the mp3 version, accordingly. Please note that IE, per usual, doesn’t support this, and Opera 10 and lower can only work with .wav files. </p>
+        <h3><span>17.</span>  Video Support</h3>
+        <p>Much like the <code>&lt;audio&gt;</code> element, we also, of course, have HTML5 video as well in the new browsers! In fact, just recently, <a href="http://apiblog.youtube.com/2010/07/new-way-to-embed-youtube-videos.html">YouTube announced a new HTML5 video embed</a> for their videos, for browsers which support it. Unfortunately, again, because the HTML5 spec doesn't specify a specific codec for video, it's left to the browsers to decide. While Safari, and Internet Explorer 9 can be expected to support video in the H.264 format (which Flash players can play), Firefox and Opera are sticking with the open source Theora and Vorbis formats. As such, when displaying HTML5 video, you must offer both formats. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">video</code> <code class="html plain">controls preload&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">source</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"cohagenPhoneCall.ogv"</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"video/ogg; codecs='vorbis, theora'"</code> <code class="html plain">/&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">source</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"cohagenPhoneCall.mp4"</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"video/mp4; 'codecs='avc1.42E01E, mp4a.40.2'"</code> <code class="html plain">/&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">p</code><code class="html plain">&gt; Your browser is old. &lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"cohagenPhoneCall.mp4"</code><code class="html plain">&gt;Download this video instead.&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt; &lt;/</code><code class="html keyword">p</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html plain">&lt;/</code><code class="html keyword">video</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <blockquote>
+        <p>Chrome can correctly display video that is encoded in both the "ogg" and "mp4" formats. </p>
+        </blockquote>
+        <p>There are a few things worth noting here. </p>
+        <ol>
+        <li>We aren't technically required to set the <code>type</code> attribute; however, if we don't, the browser has to figure out the type itself. Save some bandwidth, and declare it yourself.  </li>
+        <li>Not all browsers understand HTML5 video. Below the <code>source</code> elements, we can either offer a download link, or embed a Flash version of the video instead. It's up to you. </li>
+        <li> The <code>controls</code> and <code>preload</code> attributes will be discussed in the next two tips. </li>
+        </ol>
+        <h3><span>18.</span>  Preload Videos</h3>
+        <p>The <code>preload</code> attribute does exactly what you'd guess. Though, with that said, you should first decide whether or not you want the browser to preload the video. Is it necessary? Perhaps, if the visitor accesses a page, which is specifically made to display a video, you should definitely preload the video, and save the visitor a bit of waiting time. Videos can be preloaded by setting <code>preload="preload"</code>, or by simply adding <code>preload</code>. I prefer the latter solution; it's a bit less redundant.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+               <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">video</code> <code class="html plain">preload&gt;</code></div>
+            </div>
+        </div>
+        <h3><span>19.</span>  Display Controls</h3>
+        <p>If you're working along with each of these tips and techniques, you might have noticed that, with the code above, the video above appears to be only an image, without any controls. To render these play controls, we must specify the <code>controls</code> attribute within the <code>video</code> element. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+               <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">video</code> <code class="html plain">preload controls&gt;</code></div>
+            </div>
+        </div>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/video.jpg"></figure>
+        <p>Please note that each browser renders its player differently from one another. </p>
+        <h3><span>20.</span>  Regular Expressions</h3>
+        <p>How often have you found yourself writing some quickie regular expression to verify a particular textbox. Thanks to the new <code>pattern</code> attribute, we can insert a regular expression directly into our markup. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+               <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">form</code> <code class="html color1">action</code><code class="html plain">=</code><code class="html string">""</code> <code class="html color1">method</code><code class="html plain">=</code><code class="html string">"post"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">label</code> <code class="html color1">for</code><code class="html plain">=</code><code class="html string">"username"</code><code class="html plain">&gt;Create a Username: &lt;/</code><code class="html keyword">label</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"text"</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">name</code><code class="html plain">=</code><code class="html string">"username"</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">id</code><code class="html plain">=</code><code class="html string">"username"</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">placeholder="4 &lt;&gt; 10"</code></div><div class="line number7 index6 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">pattern="[A-Za-z]{4,10}"</code></div><div class="line number8 index7 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">autofocus</code></div><div class="line number9 index8 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">required&gt;</code></div><div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">button</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"submit"</code><code class="html plain">&gt;Go &lt;/</code><code class="html keyword">button</code><code class="html plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="html plain">&lt;/</code><code class="html keyword">form</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p>If you're moderately familiar with regular expressions, you'll be aware that this pattern: <code>[A-Za-z]{4,10}</code> accepts only upper and lowercase letters. This string must also have a minimum of four characters, and a maximum of ten. </p>
+        <p>Notice that we're beginning to combine all of these new awesome attributes! </p>
+        <p><em>If regular expressions are foreign to you, <a href="http://net.tutsplus.com/tutorials/javascript-ajax/you-dont-know-anything-about-regular-expressions/">refer here</a>. </em></p>
+        <h3><span>21.</span>  Detect Support for Attributes</h3>
+        <p>What good are these attributes if we have no way of determining whether the browser recognizes them? Well, good point; but there are several ways to figure this out. We'll discuss two. The first option is to utilize the excellent <a href="http://modernizr.com">Modernizr</a> library. Alternatively, we can create and dissect these elements to determine what the browsers are capable of. For instance, in our previous example, if we want to determine if the browser can implement the <code>pattern</code> attribute, we could add a bit of JavaScript to our page:</p>
+        <pre class="brush: noskimlinks noskimwords">alert( 'pattern' in document.createElement('input') ) // boolean;</pre>
+        <p>In fact, this is a popular method of determining browser compatibility. The jQuery library utilizes this trick. Above, we're creating a new <code>input</code> element, and determining whether the <code>pattern</code> attribute is recognized within. If it is, the browser supports this functionality. Otherwise, it of course does not. </p>
+        <pre class="brush: noskimlinks noskimwords">&lt;script&gt;
+        if (!'pattern' in document.createElement('input') ) {
+            // do client/server side validation
+        }
+        &lt;/script&gt;</pre>
+        <p><em>Keep in mind that this relies on JavaScript! </em></p>
+        <h3><span>22.</span>  Mark Element</h3>
+        <p>
+Think of the <code>&lt;mark&gt;</code> element as a highlighter. A string wrapped within this tag should be relevant to the current actions of the user. For example, if I searched for "Open your Mind" on some blog, I could then utilize some JavaScript to wrap each occurrence of this string within <code>&lt;mark&gt;</code> tags. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">h3</code><code class="html plain">&gt; Search Results &lt;/</code><code class="html keyword">h3</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html plain">&lt;</code><code class="html keyword">p</code><code class="html plain">&gt; They were interrupted, just after Quato said, &lt;</code><code class="html keyword">mark</code><code class="html plain">&gt;"Open your Mind"&lt;/</code><code class="html keyword">mark</code><code class="html plain">&gt;. &lt;/</code><code class="html keyword">p</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <h3><span>23.</span> When to Use a &lt;div&gt;</h3>
+        <p>Some of us initially questioned when we should use plain-ole <code>div</code>s. Now that we have access to <code>header</code>s, <code>article</code>s, <code>section</code>s, and <code>footer</code>s, is there ever a time to use a...<code>div</code>? Absolutely. </p>
+        <blockquote>
+        <p><code>Div</code>s should be utilized when there's no better element for the job. </p>
+        </blockquote>
+        <p>For example, if you find that you need to wrap a block of code within a wrapper element specifically for the purpose of positioning the content, a <code>&lt;div&gt;</code> makes perfect sense. However, if you're instead wrapping a new blog post, or, perhaps, a list of links in your footer, consider using the <code>&lt;article&gt;</code> and <code>&lt;nav&gt;</code> elements, respectively. They're more semantic. </p>
+        <h3><span>24.</span> What to Immediately Begin Using</h3>
+        <p>
+With all this talk about HTML5 <a href="http://blogs.techrepublic.com.com/programming-and-development/?p=718">not being complete until 2022</a>, many people disregard it entirely - which is a big mistake. In fact, there are a handful of HTML5 features that we can use in all our projects right now! Simpler, cleaner code is always a good thing. In today's video quick tip, I'll show you a handful of options.</p>
+        <!-- <figure data-video-embed="true" data-original-url="https://www.youtube.com/watch?v=HzCkSv3s0-k" class="embedded-video">
+  <iframe src="//www.youtube.com/embed/HzCkSv3s0-k?rel=0" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe></figure> -->
+        <h3><span>25.</span> What is Not HTML5</h3>
+        <p>
+People can be forgiven for assuming that awesome JavaScript-less transitions are grouped into the all-encompassing HTML5. Hey -- even Apple has inadvertently promoted this idea. For non-developers, who cares; it's an easy way to refer to modern web standards. However, for us, though it may just be semantics, it's important to understand exactly what <strong>is not</strong> HTML5. </p>
+        <ol>
+        <li> <strong>SVG: </strong> Not HTML5. It's at least five years old. </li>
+        <li> <strong>CSS3: </strong>Not HTML5. It's...CSS. </li>
+        <li> <strong>Geolocation: </strong>Not HTML5. </li>
+        <li> <strong>Client Storage: </strong> Not HTML5. It was at one point, but was removed from the spec, due to the fact that many worried that it, as a whole, was becoming too complicated. It now has its own specification.</li>
+        <li>
+        <strong>Web Sockets: </strong>Not HTML5. Again, was exported to its own specification. </li>
+        </ol>
+        <p>Regardless of how much distinction you require, all of these technologies can be grouped into the modern web stack. In fact, many of these branched specifications are still managed by the same people. </p>
+        <h3><span>26.</span> The Data Attribute</h3>
+        <p>
+We now officially have support for custom attributes within all HTML elements. While, before, we could still get away with things like:</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">h1</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">someId</code> <code class="html color1">customAttribute</code><code class="html plain">=</code><code class="html string">value</code><code class="html plain">&gt; Thank you, Tony. &lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p>...the validators would kick up a fuss! But now, as long as we preface our custom attribute with "data," we can officially use this method. If you've ever found yourself attaching important data to something like a <code>class</code> attribute, probably for JavaScript usage, this will come as a big help! </p>
+        <h3 class="nolinks"> HTML Snippet </h3>
+        <h3 class="nolinks"> Retrieve Value of the Custom Attribute </h3>
+        <pre class="noskimlinks noskimwords">var theDiv = document.getElementById('myDiv');
+        var attr = theDiv.getAttribute('data-custom-attr'); 
+        alert(attr); // My Val
+        </pre>
+        <p>It can also even be used in your CSS, like for this silly and lame CSS text changing example.  </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;!</code><code class="html keyword">DOCTYPE</code> <code class="html plain">html&gt;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="html plain">&lt;</code><code class="html keyword">html</code> <code class="html color1">lang</code><code class="html plain">=</code><code class="html string">"en"</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html plain">&lt;</code><code class="html keyword">head</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">meta</code> <code class="html color1">charset</code><code class="html plain">=</code><code class="html string">"utf-8"</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">title</code><code class="html plain">&gt;Sort of Lame CSS Text Changing&lt;/</code><code class="html keyword">title</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="html plain">&lt;</code><code class="html keyword">style</code><code class="html plain">&gt;</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="html plain">h1 { position: relative; }</code></div><div class="line number10 index9 alt1"><code class="html plain">h1:hover { color: transparent; }</code></div><div class="line number11 index10 alt2">&nbsp;</div><div class="line number12 index11 alt1"><code class="html plain">h1:hover:after {</code></div><div class="line number13 index12 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">content: attr(data-hover-response);</code></div><div class="line number14 index13 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">color: black;</code></div><div class="line number15 index14 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">position: absolute;</code></div><div class="line number16 index15 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">left: 0;</code></div><div class="line number17 index16 alt2">&nbsp;</div><div class="line number18 index17 alt1"><code class="html plain">}</code></div><div class="line number19 index18 alt2"><code class="html plain">&lt;/</code><code class="html keyword">style</code><code class="html plain">&gt;</code></div><div class="line number20 index19 alt1"><code class="html plain">&lt;/</code><code class="html keyword">head</code><code class="html plain">&gt;</code></div><div class="line number21 index20 alt2"><code class="html plain">&lt;</code><code class="html keyword">body</code><code class="html plain">&gt;</code></div><div class="line number22 index21 alt1">&nbsp;</div><div class="line number23 index22 alt2"><code class="html plain">&lt;</code><code class="html keyword">h1</code> <code class="html color1">data-hover-response</code><code class="html plain">=</code><code class="html string">"I Said Don't Touch Me!"</code><code class="html plain">&gt; Don't Touch Me&nbsp; &lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div><div class="line number24 index23 alt1">&nbsp;</div><div class="line number25 index24 alt2"><code class="html plain">&lt;/</code><code class="html keyword">body</code><code class="html plain">&gt;</code></div><div class="line number26 index25 alt1"><code class="html plain">&lt;/</code><code class="html keyword">html</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p>You can view a demo of the effect above <a href="http://jsbin.com/okepo4">on JSBIN</a>. </p>
+        <h3><span>27.</span> The Output Element</h3>
+        <p>As you probably have guessed, the <code>output</code> element is used to display some sort of calculation. For example, if you'd like to display the coordinates of a mouse position, or the sum of a series of numbers, this data should be inserted into the <code>output</code> element. </p>
+        <p>As a simple example, let's insert the sum of two numbers into an empty <code>output</code> with JavaScript, when a <code>submit</code> button is pressed. </p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">form</code> <code class="html color1">action</code><code class="html plain">=</code><code class="html string">""</code> <code class="html color1">method</code><code class="html plain">=</code><code class="html string">"get"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">p</code><code class="html plain">&gt; </code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">10 + 5 = &lt;</code><code class="html keyword">output</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"sum"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">output</code><code class="html plain">&gt; </code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">p</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">button</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"submit"</code><code class="html plain">&gt; Calculate &lt;/</code><code class="html keyword">button</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">form</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="html plain">&lt;</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="html plain">(function() {</code></div><div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">var f = document.forms[0];</code></div><div class="line number11 index10 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number12 index11 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">if ( typeof f['sum'] !== 'undefined' ) {</code></div><div class="line number13 index12 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">f.addEventListener('submit', function(e) {</code></div><div class="line number14 index13 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">f['sum'].value = 15;</code></div><div class="line number15 index14 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">e.preventDefault();</code></div><div class="line number16 index15 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">}, false);</code></div><div class="line number17 index16 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">}</code></div><div class="line number18 index17 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">else { alert('Your browser is not ready yet.'); }</code></div><div class="line number19 index18 alt2"><code class="html plain">})();</code></div><div class="line number20 index19 alt1"><code class="html plain">&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p><em><a href="http://jsbin.com/efedu3">Try it out for yourself.</a> </em></p>
+        <p>Please note that support for the <code>output</code> element is still a bit wonky. At the time of this writing, I was only able to get Opera to play nice. This is reflected in the code above. If the browser does not recognize the element, the browser will simply alert a notice informing you of as much. Otherwise, it finds the output with a name of "sum," and sets its value to <code>15</code>, accordingly, after the form has been submitted. </p>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/output.png"></figure>
+        <p>This element can also receive a <code>for</code> attribute, which reflects the name of the element that the <code>output</code> relates to, similar to the way that a <code>label</code> works. </p>
+        <h3><span>28.</span> Create Sliders with the Range Input</h3>
+        <p>HTML5 introduces the new <code>range</code> type of input.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"range"</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <p>Most notably, it can receive <code>min</code>, <code>max</code>, <code>step</code>, and <code>value</code> attributes, among others. Though only Opera seems to support this type of input right now fully, it'll be fantastic when we can actually use this!  </p>
+        <p>For a quick demonstration, let's build a gauge that will allow users to decide how awesome "Total Recall" is. We won't build a real-world polling solution, but we'll review how it could be done quite easily. </p>
+        <h3 class="nolinks">Step 1: Mark-up </h3>
+        <p>First, we create our mark-up.</p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">form</code> <code class="html color1">method</code><code class="html plain">=</code><code class="html string">"post"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">h1</code><code class="html plain">&gt; Total Recall Awesomness Gauge &lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"range"</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"range"</code> <code class="html color1">min</code><code class="html plain">=</code><code class="html string">"0"</code> <code class="html color1">max</code><code class="html plain">=</code><code class="html string">"10"</code> <code class="html color1">step</code><code class="html plain">=</code><code class="html string">"1"</code> <code class="html color1">value</code><code class="html plain">=</code><code class="html string">""</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">output</code> <code class="html color1">name</code><code class="html plain">=</code><code class="html string">"result"</code><code class="html plain">&gt;&nbsp; &lt;/</code><code class="html keyword">output</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html plain">&lt;/</code><code class="html keyword">form</code><code class="html plain">&gt;</code></div>
+            </div>
+        </div>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/gaugeunstyled.png"></figure>
+        <p>Notice that, in addition to setting <code>min</code> and <code>max</code> values, we can always specify what the <code>step</code> for each transition will be. If the <code>step</code> is set to <code>1</code>, there will then be 10 values to choose. We also take advantage of the new <code>output</code> element that we learned about in the previous tip. </p>
+        <h3 class="nolinks"> Step 2: CSS </h3>
+        <p>Next, we'll style it just a bit. We'll also utilize <code>:before</code> and <code>:after</code> to inform the user what our specified <code>min</code> and <code>max</code> values are. <em>Thanks so much to Remy and Bruce for teaching me this trick, via "<a href="http://introducinghtml5.com/">Introducing HTML5</a>." </em></p>
+        <div class="jumbotron">
+            <div class="innerPage-jumbo clearfix">
+                <div class="line number1 index0 alt2"><code class="css plain">body {</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css keyword">font-family</code><code class="css plain">: </code><code class="css string">'Myriad-Pro'</code><code class="css plain">, </code><code class="css string">'myriad'</code><code class="css plain">, </code><code class="css color1">helvetica</code><code class="css plain">, </code><code class="css color1">arial</code><code class="css plain">, </code><code class="css color1">sans-serif</code><code class="css plain">;</code></div><div class="line number3 index2 alt2"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css keyword">text-align</code><code class="css plain">: </code><code class="css value">center</code><code class="css plain">;</code></div><div class="line number4 index3 alt1"><code class="css plain">}</code></div><div class="line number5 index4 alt2"><code class="css plain">input { </code><code class="css keyword">font-size</code><code class="css plain">: </code><code class="css value">14px</code><code class="css plain">; </code><code class="css keyword">font-weight</code><code class="css plain">: </code><code class="css value">bold</code><code class="css plain">;&nbsp; }</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="css plain">input[type=range]:before { </code><code class="css keyword">content</code><code class="css plain">: </code><code class="css value">attr</code><code class="css plain">(min); </code><code class="css keyword">padding-right</code><code class="css plain">: </code><code class="css value">5px</code><code class="css plain">; }</code></div><div class="line number8 index7 alt1"><code class="css plain">input[type=range]:after { </code><code class="css keyword">content</code><code class="css plain">: </code><code class="css value">attr</code><code class="css plain">(max); </code><code class="css keyword">padding-left</code><code class="css plain">: </code><code class="css value">5px</code><code class="css plain">;}</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="css plain">output { </code></div><div class="line number11 index10 alt2"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css keyword">display</code><code class="css plain">: </code><code class="css value">block</code><code class="css plain">;</code></div><div class="line number12 index11 alt1"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css keyword">font-size</code><code class="css plain">: </code><code class="css value">5.5em</code><code class="css plain">;</code></div><div class="line number13 index12 alt2"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css keyword">font-weight</code><code class="css plain">: </code><code class="css value">bold</code><code class="css plain">;</code></div><div class="line number14 index13 alt1"><code class="css plain">}</code></div>
+            </div>
+        </div>
+        <p>Above, we create content before and after the range input, and make their values equal to the <code>min</code> and <code>max</code> values, respectively. </p>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/styledNoJS.png"></figure>
+        <h3 class="nolinks">Step 3: The JavaScript </h3>
+        <p>Lastly, we: </p>
+        <ul>
+        <li> Determine if the current browser knows what the range input is. If not, we alert the user that the demo won't work. </li>
+        <li>Update the <code>output</code> element dynamically, as the user moves the slider. </li>
+        <li> Listen for when the user mouses off the slider, grab the value, and save it to local storage. </li>
+        <li>Then, the next time the user refreshes the page, the range and output will automatically be set to what they last selected. </li>
+        </ul>
+        <pre class="brush: noskimlinks noskimwords">(function() {
+            var f = document.forms[0],
+                range = f['range'],
+                result = f['result'],
+                cachedRangeValue = localStorage.rangeValue ? localStorage.rangeValue : 5; 
+            
+            // Determine if browser is one of the cool kids that 
+            // recognizes the range input.
+            var o = document.createElement('input');
+            o.type = 'range';
+            if ( o.type === 'text' ) alert('Sorry. Your browser is not cool enough yet. Try the latest Opera.');
+
+            // Set initial values of the input and ouput elements to
+            // either what's stored locally, or the number 5.
+            range.value = cachedRangeValue;
+            result.value = cachedRangeValue;
+
+            // When the user makes a selection, update local storage.
+            range.addEventListener("mouseup", function() {
+                alert("The selected value was " + range.value + ". I am using local storage to remember the value. Refresh and check on a modern browser.");
+                localStorage ? (localStorage.rangeValue = range.value) : alert("Save data to database or something instead.");
+            }, false);
+            
+            // Display chosen value when sliding. 
+            range.addEventListener("change", function() {
+                result.value = range.value;
+            }, false);
+            
+        })();</pre>
+        <figure class="post_image"><img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/12357/image/gauge.png"></figure>
+        <p>Ready for the real world? Probably not yet; but it's still fun to play with and prep for!</p>
+        <p><a href="http://cdn.tutsplus.com/net/uploads/legacy/757_html5Tips/range.html.zip">Download the source code</a>, and try it out for yourself. But use Opera. </p>
+        <p>Thanks for reading! We've covered a lot, but have still only scratched the surface of what's possible with HTML5. I hope this served as a helpful primer!</p>
+        <p>If you're looking for a quick way to get started,&nbsp;have a look at our&nbsp;<a href="http://themeforest.net/tags/html5" target="_self">HTML5 Templates</a>, as a quality theme from <a href="http://themeforest.net" target="_self">ThemeForest</a>&nbsp;may be just what your next project needs.</p>
+</section>
+<section class="commnetArea container">
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
+        /*
+        var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() {  // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            
+            s.src = '//mttuts.disqus.com/embed.js';
+            
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+</section>
+
+<a href="javascript:void(0)" class="scrollTopCLick"><i class="fa fa-arrow-up"></i></a>
+<!--[if lt IE 9]>
+    <script src="resources/jslib/html5support/html5shiv.min.js"></script>
+    <script src="resources/jslib/html5support/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script id="dsq-count-scr" src="//mttuts.disqus.com/count.js" async></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78428824-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
